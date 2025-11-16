@@ -1,0 +1,10 @@
+<div class="live-bar" style="position:relative; background:#e0ffe0; height:24px; width:100%; overflow:hidden; text-align:center; font-weight:bold; font-size:18px;">
+  <span id="phaseText" style="position:relative; z-index:1;">LIVE — Pre Match</span>
+</div>
+
+<script>
+const phaseText = document.getElementById('phaseText');
+function updatePhase(text){
+  phaseText.innerText = text;
+}
+</script>
