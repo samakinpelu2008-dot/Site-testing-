@@ -1,0 +1,32 @@
+<div class="scoreboard">
+  <div class="teams">
+    <div style="text-align:center;">
+      <strong>CPE Class 30</strong><br>
+      <img src="https://i.ibb.co/zHHcRL0R/file-00000000e73471f4b792de9c1a25853f-1.png" width="40">
+    </div>
+
+    <div id="score" style="font-size:40px; font-weight:bold;">00 - 00</div>
+
+    <div style="text-align:center;">
+      <strong>FRM Class 30</strong><br>
+      <img src="https://i.ibb.co/KFmk7FT/frm-logo-temp.png" width="40">
+    </div>
+  </div>
+
+  <!-- Goal scorers -->
+  <div class="goals" style="text-align:center; margin-top:10px; font-size:16px;">
+    <div id="cpeGoals">CPE Goals: - </div>
+    <div id="frmGoals">FRM Goals: - </div>
+  </div>
+</div>
+
+<script>
+function updateScore(cpeScore, frmScore) {
+  document.getElementById('score').innerText = `${cpeScore} - ${frmScore}`;
+}
+
+function updateGoalScorers(cpeList, frmList){
+  document.getElementById('cpeGoals').innerText = "CPE Goals: " + (cpeList.length ? cpeList.join(", ") : "-");
+  document.getElementById('frmGoals').innerText = "FRM Goals: " + (frmList.length ? frmList.join(", ") : "-");
+}
+</script>
